@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}AUCSSM Admin Login{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6 col-lg-4">
+    <div class="card glass-card border-0 shadow-sm">
+      <div class="card-body p-4">
+        <h2 class="card-title mb-3 text-center gradient-text">Admin Login</h2>
+        <p class="text-muted small text-center mb-4">
+          Secure portal to manage AUCSSM member records and generate verification QR codes.
+        </p>
+        <form method="post" novalidate>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              name="username"
+              autocomplete="username"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Member Not Found{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-6">
+    <div class="card glass-card border-0 shadow-sm">
+      <div class="card-body p-4 text-center">
+        <h2 class="card-title mb-3 gradient-text">Member Not Found</h2>
+        <p class="text-muted mb-3">
+          No active AUCSSM member record was found for roll number
+          <span class="fw-semibold">{{ roll_number }}</span>.
+        </p>
+        <p class="small text-muted mb-4">
+          If you believe this is a mistake, please contact the AUCSSM executive body or
+          email <a href="mailto:aucssm.multan@gmail.com">aucssm.multan@gmail.com</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
